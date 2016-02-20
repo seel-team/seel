@@ -1,6 +1,6 @@
 var fis = module.exports = require('fis');
-fis.require.prefixes = [ 'scrat', 'fis' ];
-fis.cli.name = 'scrat';
+fis.require.prefixes = [ 'seel', 'fis' ];
+fis.cli.name = 'seel';
 fis.cli.info = fis.util.readJSON(__dirname + '/package.json');
 fis.cli.version = require('./version.js');
 fis.cli.help.commands = [ 'release', 'install', 'server', 'init' ];
@@ -153,7 +153,7 @@ fis.seo = function(name){
 };
 
 //alias
-Object.defineProperty(global, 'scrat', {
+Object.defineProperty(global, 'seel', {
     enumerable : true,
     writable : false,
     value : fis
